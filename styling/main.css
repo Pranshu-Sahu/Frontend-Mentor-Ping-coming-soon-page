@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 13px;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0 3em 0;
+}
+
+.container {
+  text-align: center;
+  width: min(600px, 99%);
+}
+
+.header__img {
+  width: 5rem;
+}
+
+.main {
+  font-family: "Libre Franklin";
+}
+.main * {
+  margin-block: 7px;
+}
+.main__heading {
+  color: hsl(223deg, 100%, 88%);
+  font-weight: 300;
+}
+.main__heading--bold {
+  font-weight: 900;
+  color: hsl(209deg, 33%, 12%);
+}
+.main .notify {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 1em;
+  position: relative;
+}
+.main .notify input {
+  flex: 1 0 40%;
+  min-width: 200px;
+  padding: 1em;
+  font-size: 0.8rem;
+  border-radius: 25px;
+  border: 2px solid hsl(223deg, 100%, 88%);
+}
+.main .notify .btn {
+  flex: 1 0 10%;
+  padding: 1em;
+  font-size: 0.8rem;
+  border-radius: 25px;
+  color: hsl(223deg, 100%, 88%);
+  background-color: hsl(223deg, 87%, 63%);
+  box-shadow: 2px 2px 12px hsl(223deg, 87%, 63%);
+  border: 0;
+}
+.main .notify .btn:hover {
+  cursor: pointer;
+  box-shadow: 0 7px 6px 0 hsl(223deg, 87%, 63%), 0 7px 5px 0 hsl(223deg, 87%, 63%);
+}
+.main .error {
+  font-size: 0.7rem;
+  color: rgb(255, 82, 99);
+  text-align: left;
+  position: absolute;
+  top: calc(2em + 13px + 0.7rem);
+  left: 1em;
+}
+
+.dashboard__img {
+  max-width: 100%;
+  margin-top: 15px;
+}
+
+.footer .social-icons {
+  color: hsl(223deg, 87%, 63%);
+}
+.footer .social-icons i {
+  padding: 0.5em 0.6em;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-block: 1.5em;
+  margin-inline: 15px;
+  background-color: rgb(241, 241, 241);
+}
+.footer .social-icons i:hover {
+  color: white;
+  background-color: hsl(223deg, 87%, 63%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */

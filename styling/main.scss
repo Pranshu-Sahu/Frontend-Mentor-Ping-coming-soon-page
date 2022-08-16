@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+@import './resets';
+@import './variables';
+@function weight($weight-name) {
+    @return map-get($font-weight,
+    $weight-name);
+}
+
+html {
+    font-size: 13px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0 3em 0;
+}
+
+.container {
+    text-align: center;
+    width: min(600px, 99%);
+}
+
+.header {
+    &__img {
+        width: 5rem;
+    }
+}
+
+.main {
+    * {
+        margin-block: 7px;
+    }
+    font-family: 'Libre Franklin';
+    &__heading {
+        color: $pale-blue;
+        font-weight: weight(light);
+        &--bold {
+            font-weight: 900;
+            color: $very-dark-blue;
+        }
+    }
+    .notify {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        gap: 1em;
+        position: relative;
+        input {
+            flex: 1 0 40%;
+            min-width: 200px;
+            padding: 1em;
+            font-size: 0.8rem;
+            border-radius: 25px;
+            border: 2px solid $pale-blue;
+        }
+        .btn {
+            flex: 1 0 10%;
+            padding: 1em;
+            font-size: 0.8rem;
+            border-radius: 25px;
+            color: $pale-blue;
+            background-color: $blue;
+            box-shadow: 2px 2px 12px $blue;
+            border: 0;
+            &:hover {
+                cursor: pointer;
+                box-shadow: 0 7px 6px 0 $blue, 0 7px 5px 0 $blue;
+            }
+        }
+    }
+    .error {
+        font-size: 0.7rem;
+        color: $light-red;
+        text-align: left;
+        position: absolute;
+        top: calc(2em + 13px + 0.7rem);
+        left: 1em;
+    }
+}
+
+.dashboard__img {
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+.footer {
+    .social-icons {
+        color: $blue;
+        i {
+            padding: 0.5em 0.6em;
+            border-radius: 50%;
+            cursor: pointer;
+            margin-block: 1.5em;
+            margin-inline: 15px;
+            background-color: rgb(241, 241, 241);
+            &:hover {
+                color: white;
+                background-color: $blue;
+            }
+        }
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

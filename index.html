@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/015cbe9b3c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styling/main.css" />
+</head>
+
+<body>
+    <div class="container" aria-label='container'>
+        <header class="header">
+            <img class="header__img" src="images/logo.svg" alt="" />
+        </header>
+        <main class="main">
+            <h1 class="main__heading">We are launching <span class="main__heading--bold">soon!</span></h1>
+            <p class="main__para">Subscribe and get notified</p>
+            <form class="notify" name="myForm" onsubmit="return validateForm()" action="/myaction.php" method="post">
+
+                <input type="text" placeholder="Your email address" name="femail">
+                <div class="error"></div>
+
+                <input type="submit" value='Notify Me' class="btn">
+            </form>
+        </main>
+        <img class="dashboard__img" src="images/illustration-dashboard.png" alt="illustration-dashboard" />
+
+        <footer class="footer">
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>&copy; Copyright Ping. All rights reserved.
+            <p class="attribution">
+                Challenge by
+                <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Pranshu Sahu</a>.
+            </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
